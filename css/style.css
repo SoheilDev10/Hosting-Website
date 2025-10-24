@@ -6,10 +6,13 @@
     --headeing-size:1.87rem;
     --heading-font-weight:bold;
     --primary-buttons-color:#e50418;
+    --primary-buttons-color-hover:#2f3f4d;
     --secondary-buttons-color:#2f3f4d;
+    --secondary-buttons-color:#e50418;
     --buttons-border-radius:999px;
     --buttons-text-color:white;
     --buttons-text-size:1rem;
+    --buttons-text-weight:500;
     --buttons-shadow:0px 4px 10px rgba(0, 0, 0, 0.160);
     --paragraph-size:1rem;
     --paragraph-color:black;
@@ -19,6 +22,7 @@
     --padding-left-and-right:5rem;
     --padding-left-and-right-tablet:3rem;
     --padding-left-and-right-mobile:1.5rem;
+    --padding-left-and-right-small-mobile:1.5rem;
 }
 *{
     box-sizing: border-box;
@@ -26,4 +30,54 @@
 }
 body{
     background-color: var(--bg-body);
+}
+.cont{
+    padding-right: var(--padding-left-and-right);
+    padding-left: var(--padding-left-and-right);
+}
+a{
+    text-decoration: none;
+}
+@media (max-width:640px){
+
+}
+@media (max-width:768px){
+
+}
+@media (max-width:1024px){
+
+}
+@media (max-width:1280px){
+
+}
+.menu-link{
+    color: var(--header-menu-color);
+    font-size: var(--header-menu-size);
+}
+.menu-link i{
+    position: relative;
+    top:3px;
+    margin-left: 5px;
+}
+.menu-link:hover{
+    color: var(--header-menu-color-hover);
+}
+.btn-panel{
+    background-color: var(--primary-buttons-color);
+    color: var(--buttons-text-color);
+    border-radius: var(--buttons-border-radius);
+    padding: 0.3rem 1.7rem 0.3rem 1.7rem !important;
+    font-size: var(--buttons-text-size);
+    font-weight: var(--buttons-text-weight);
+}
+.btn-panel:hover{
+    background-color: var(--primary-buttons-color-hover);
+}
+.btns-header{
+    background-color: var(--bg-color-icons);
+    padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.btns-header i{
+    position: relative;
+    top: 3px;
 }
