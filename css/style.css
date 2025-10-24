@@ -3,12 +3,13 @@
     --header-menu-color:#2f3f4d;
     --header-menu-color-hover:#e50418;
     --header-menu-size:1rem;
+    --header-menu-mobile-size:1.3rem;    
     --headeing-size:1.87rem;
     --heading-font-weight:bold;
     --primary-buttons-color:#e50418;
     --primary-buttons-color-hover:#2f3f4d;
     --secondary-buttons-color:#2f3f4d;
-    --secondary-buttons-color:#e50418;
+    --secondary-buttons-color-hover:#e50418;
     --buttons-border-radius:999px;
     --buttons-text-color:white;
     --buttons-text-size:1rem;
@@ -17,12 +18,14 @@
     --paragraph-size:1rem;
     --paragraph-color:black;
     --bg-color-icons:#f1f2f2;
+    --bg-search-bar:#f1f2f2;
     --primary-color-icons:#293948;
     --secondary-color-icons:#e50418;
+    --active-menu-color:#e50418;
     --padding-left-and-right:5rem;
-    --padding-left-and-right-tablet:3rem;
-    --padding-left-and-right-mobile:1.5rem;
-    --padding-left-and-right-small-mobile:1.5rem;
+    --padding-left-and-right-lg:2.5rem;
+    --padding-left-and-right-tablet:2rem;
+    --padding-left-and-right-mobile:1rem;
 }
 *{
     box-sizing: border-box;
@@ -37,18 +40,6 @@ body{
 }
 a{
     text-decoration: none;
-}
-@media (max-width:640px){
-
-}
-@media (max-width:768px){
-
-}
-@media (max-width:1024px){
-
-}
-@media (max-width:1280px){
-
 }
 .menu-link{
     color: var(--header-menu-color);
@@ -80,4 +71,57 @@ a{
 .btns-header i{
     position: relative;
     top: 3px;
+}
+@media (max-width:1280px){
+    
+}
+@media (max-width:1024px){
+    .cont{
+        padding-right: var(--padding-left-and-right-lg);
+        padding-left: var(--padding-left-and-right-lg);
+    }
+    
+}
+@media (min-width:641px) and (max-width:768px){
+    .cont{
+        padding-right: var(--padding-left-and-right-tablet);
+        padding-left: var(--padding-left-and-right-tablet);
+    }
+}
+@media (max-width:640px){
+    .cont{
+        padding-right: var(--padding-left-and-right-mobile);
+        padding-left: var(--padding-left-and-right-mobile);
+    }
+
+}
+.btn-menu{
+    background-color: var(--bg-color-icons);
+    padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.btn-menu i{
+    position: relative;
+    top: 3px;
+}
+.menu-link-mobile{
+    font-size: var(--header-menu-mobile-size);
+    color: var(--header-menu-color);
+}
+#menu-mobile .active{
+    color: var(--active-menu-color);
+}
+.div-search-mobile{
+    background-color: var(--bg-search-bar);
+}
+.btn-register-mobile{
+    background-color: var(--primary-buttons-color);
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+}
+.btns-offcanvas{
+    color: var(--buttons-text-color);
+    font-size: var(--buttons-text-size);
+}
+.btn-login-mobile{
+    background-color: var(--secondary-buttons-color);
 }
