@@ -11,20 +11,24 @@
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <header>
-        <section id="header" class="hidden lg:flex items-center justify-between mt-5 cont border-b border-black/20 pb-4">
+        <section id="header"
+            class="hidden lg:flex items-center justify-between mt-5 cont border-b border-black/20 pb-4">
             <div class="right-header flex items-center gap-x-6">
                 <img src="/assets/download.png" alt="logo" id="logo" class="w-36">
                 <nav>
                     <ul id="menu" class="flex gap-x-8">
-                        <li class="menu-items"><a href="#" class="menu-link transition-all duration-300"><i
+                        <li class="menu-items"><a href="#" class="menu-link transition-all duration-300 active"><i
                                     class="fi fi-rr-house-chimney"></i>صفحه اصلی</a></li>
                         <li class="menu-items"><a href="#" class="menu-link transition-all duration-300"><i
                                     class="fi fi-rr-rectangle-list"></i>پنل های ما</a></li>
@@ -36,9 +40,28 @@
                 </nav>
             </div>
             <div class="left-header flex gap-x-3">
-                <button type="button" class="btn-search btns-header rounded-full cursor-pointer"><i class="fi fi-ss-search text-xl"></i></button>
-                <button type="button" class="btn-contact btns-header rounded-full cursor-pointer"><i class="fi fi-sr-phone-call text-xl"></i></button>
+                <button type="button" class="btn-search btns-header rounded-full cursor-pointer"><i
+                        class="fi fi-ss-search text-xl"></i></button>
+                <button type="button" class="btn-contact btns-header rounded-full cursor-pointer"><i
+                        class="fi fi-sr-phone-call text-xl"></i></button>
                 <button type="button" class="btn-panel transition-all duration-300 cursor-pointer">پنل کاربری</button>
+            </div>
+            <div class="modal fixed inset-0 hidden justify-center bg-black/30 backdrop-blur-sm">
+                <div class="modal-search -translate-y-full flex flex-col items-center p-3 rounded-md bg-white w-4/12 transition-all duration-600">
+                    <div class="top-modal-search flex flex-col items-center pb-4 w-full border-b border-black/50">
+                        <button class="btn-close-modal-search self-end cursor-pointer transition-all duration-300" type="button">
+                            <i class="fi fi-rr-circle-xmark text-2xl"></i>
+                        </button>
+                        <img src="/assets/download.png" alt="logo" class="w-40">
+                    </div>
+                    <div class="div-search-modal flex w-12/12 mt-4 pr-2 rounded-md">
+                        <input type="search" class="input-search-modal bg-transparent w-10/12 focus:outline-none"
+                            placeholder="جستجو کنید...">
+                        <button type="button" class="w-2/12 rounded-t-md rounded-l-md transition-all duration-300 p-2 cursor-pointer">
+                            <i class="fi fi-rr-search text-2xl relative top-1 text-white"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="header-mobile" class="flex lg:hidden justify-between mt-4 cont border-b border-black/20 pb-4">
@@ -46,21 +69,29 @@
             <img src="/assets/download.png" alt="logo" id="logo" class="w-36">
         </section>
         <div class="offCanvas transition-all duration-300 fixed inset-0 bg-black/30 hidden backdrop-blur-sm">
-            <div class="div-canvas translate-x-full transition-all duration-700 flex flex-col p-5 h-full w-3/4 bg-white items-center">
-                <button type="button" class="btn-close text-black self-end"><i class="fi fi-rr-circle-xmark text-2xl"></i></button>
+            <div
+                class="div-canvas translate-x-full transition-all duration-700 flex flex-col p-5 h-full w-3/4 bg-white items-center">
+                <button type="button" class="btn-close text-black self-end"><i
+                        class="fi fi-rr-circle-xmark text-2xl"></i></button>
                 <img src="/assets/download.png" alt="logo" id="logo" class="w-44">
                 <div class="div-search-mobile flex flex-row-reverse items-center w-full gap-x-3 mt-5 rounded-md p-2">
                     <i class="fi fi-rr-search text-2xl relative top-1"></i>
                     <input type="search" class="w-full focus:outline-none" placeholder="جستجو کنید...">
                 </div>
                 <ul id="menu-mobile" class="gap-y-6 flex flex-col mt-8 w-full items-center">
-                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#" class="menu-link-mobile active">صفحه اصلی</a></li>
-                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#" class="menu-link-mobile">پنل های ما</a></li>
-                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#" class="menu-link-mobile">درباره ما</a></li>
-                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#" class="menu-link-mobile">تماس با ما</a></li>
+                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#"
+                            class="menu-link-mobile active">صفحه اصلی</a></li>
+                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#"
+                            class="menu-link-mobile">پنل های ما</a></li>
+                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#"
+                            class="menu-link-mobile">درباره ما</a></li>
+                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#"
+                            class="menu-link-mobile">تماس با ما</a></li>
                 </ul>
-                <button class="btns-offcanvas btn-register-mobile w-full rounded-full p-3" type="button">ثبت نام</button>
-                <button class="btns-offcanvas btn-login-mobile w-full rounded-full p-3" type="button">ورود به سیستم</button>
+                <button class="btns-offcanvas btn-register-mobile w-full rounded-full p-3" type="button">ثبت
+                    نام</button>
+                <button class="btns-offcanvas btn-login-mobile w-full rounded-full p-3" type="button">ورود به
+                    سیستم</button>
             </div>
         </div>
     </header>

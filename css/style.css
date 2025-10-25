@@ -107,6 +107,9 @@ a{
     font-size: var(--header-menu-mobile-size);
     color: var(--header-menu-color);
 }
+#menu .active{
+    color: var(--active-menu-color);
+}
 #menu-mobile .active{
     color: var(--active-menu-color);
 }
@@ -124,4 +127,16 @@ a{
 }
 .btn-login-mobile{
     background-color: var(--secondary-buttons-color);
+}
+.div-search-modal{
+    background-color:#f1f2f2;
+}
+.div-search-modal button{
+    background-color: var(--primary-buttons-color);
+}
+.div-search-modal button:hover{
+    background-color: var(--primary-buttons-color-hover);
+}
+.btn-close-modal-search:hover{
+    color: #e50418;
 }

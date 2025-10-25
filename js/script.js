@@ -2,8 +2,13 @@ const btnMenu = document.querySelector(".btn-menu");
 const btnClose = document.querySelector(".btn-close");
 const offCanvas = document.querySelector(".offCanvas");
 const divCanvas = document.querySelector(".div-canvas");
+const btnSearch = document.querySelector(".btn-search");
+const modal = document.querySelector(".modal");
+const modalSearch = document.querySelector(".modal-search");
+const btnCloseModalSr = document.querySelector(".btn-close-modal-search");
 
 function Main() {
+    //Create menu for mobile
     btnMenu.addEventListener('click', () => {
         offCanvas.classList.add("flex");
         offCanvas.classList.remove("hidden");
@@ -24,7 +29,34 @@ function Main() {
         if (offCanvas.classList.contains("flex") && !divCanvas.contains(e.target) && !btnMenu.contains(e.target))
             btnClose.click();
     });
-
-
+    //Create modal search
+    btnSearch.addEventListener('click', () => {
+        if (modal.classList.contains("hidden")) {
+            modal.classList.add("flex");
+            modal.classList.remove("hidden");
+            setTimeout(() => {
+                modalSearch.classList.add("-translate-y-0");
+                modalSearch.classList.remove("-translate-y-full");
+            }, 300);
+            setTimeout(() => {
+                modal.classList.add("items-center");
+            }, 350);
+        }
+    });
+    btnCloseModalSr.addEventListener('click', () => {
+        if (!modal.classList.contains("hidden")) {
+            setTimeout(() => {
+                modalSearch.classList.remove("-translate-y-0");
+                modalSearch.classList.add("translate-y-full");
+            }, 300);
+            setTimeout(() => {
+                modal.classList.remove("flex");
+                modal.classList.add("hidden");
+                modalSearch.classList.remove("translate-y-full");
+                modalSearch.classList.add("-translate-y-full");
+                modal.classList.remove("items-center");
+            }, 800);
+        }
+    });
 }
 document.addEventListener('DOMContentLoaded', Main);
