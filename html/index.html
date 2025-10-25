@@ -47,9 +47,11 @@
                 <button type="button" class="btn-panel transition-all duration-300 cursor-pointer">پنل کاربری</button>
             </div>
             <div class="modal fixed inset-0 hidden justify-center bg-black/30 backdrop-blur-sm">
-                <div class="modal-search -translate-y-full flex flex-col items-center p-3 rounded-md bg-white w-4/12 transition-all duration-600">
+                <div
+                    class="modal-search -translate-y-full flex flex-col items-center p-3 rounded-md bg-white w-4/12 transition-all duration-800">
                     <div class="top-modal-search flex flex-col items-center pb-4 w-full border-b border-black/50">
-                        <button class="btn-close-modal-search self-end cursor-pointer transition-all duration-300" type="button">
+                        <button class="btn-close-modal-search self-end cursor-pointer transition-all duration-300"
+                            type="button">
                             <i class="fi fi-rr-circle-xmark text-2xl"></i>
                         </button>
                         <img src="/assets/download.png" alt="logo" class="w-40">
@@ -57,7 +59,8 @@
                     <div class="div-search-modal flex w-12/12 mt-4 pr-2 rounded-md">
                         <input type="search" class="input-search-modal bg-transparent w-10/12 focus:outline-none"
                             placeholder="جستجو کنید...">
-                        <button type="button" class="w-2/12 rounded-t-md rounded-l-md transition-all duration-300 p-2 cursor-pointer">
+                        <button type="button"
+                            class="w-2/12 rounded-t-md rounded-l-md transition-all duration-300 p-2 cursor-pointer">
                             <i class="fi fi-rr-search text-2xl relative top-1 text-white"></i>
                         </button>
                     </div>
@@ -95,6 +98,31 @@
             </div>
         </div>
     </header>
+    <main>
+        <section id="hero-section" class="cont flex flex-col lg:flex-row mt-10">
+            <div class="right-hero flex flex-col justify-center w-full lg:w-7/12 gap-y-5">
+                <h2 class="title-hero">بهترین هاست و سرور های وردپرسی با <span class="span-title">کیان هاست</span></h2>
+                <p class="p-hero w-10/12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                    طراحان
+                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.چاپگرها و متون بلکه
+                    روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                <p class="p2-hero mt-5 w-10/12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                    از طراحان
+                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                <div class="btn-hero-div flex gap-x-7 mt-4">
+                    <button
+                        class="btn-hero1 text-lg rounded-full transition-all duration-300 cursor-pointer hover:translate-y-3"
+                        type="button">درباره ما ...</button>
+                    <button
+                        class="btn-hero2 text-lg rounded-full transition-all duration-300 cursor-pointer hover:translate-y-3"
+                        type="button">پلن های ما<i class="fi fi-rr-angle-small-left text-lg"></i></button>
+                </div>
+            </div>
+            <div class="left-hero w-full lg:w-5/12 flex items-center">
+                <img src="/assets/hero-img-server.png" class="lg:w-full md:w-9/12 w-11/12 order-2 lg:order-1">
+            </div>
+        </section>
+    </main>
 
 
     <script src="/js/script.js"></script>

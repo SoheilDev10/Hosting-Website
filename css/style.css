@@ -5,7 +5,9 @@
     --header-menu-size:1rem;
     --header-menu-mobile-size:1.3rem;    
     --headeing-size:1.87rem;
-    --heading-font-weight:bold;
+    --heading-text-color:#2f3f4d;
+    --heading-font-weight:800;
+    --title-hero-section:2.3rem;
     --primary-buttons-color:#e50418;
     --primary-buttons-color-hover:#2f3f4d;
     --secondary-buttons-color:#2f3f4d;
@@ -14,7 +16,7 @@
     --buttons-text-color:white;
     --buttons-text-size:1rem;
     --buttons-text-weight:500;
-    --buttons-shadow:0px 4px 10px rgba(0, 0, 0, 0.160);
+    --buttons-shadow:0px 4px 10px rgba(0, 0, 0, 0.393);
     --paragraph-size:1rem;
     --paragraph-color:black;
     --bg-color-icons:#f1f2f2;
@@ -93,6 +95,9 @@ a{
         padding-right: var(--padding-left-and-right-mobile);
         padding-left: var(--padding-left-and-right-mobile);
     }
+    .title-hero{
+        width: 95%
+    }
 
 }
 .btn-menu{
@@ -139,4 +144,43 @@ a{
 }
 .btn-close-modal-search:hover{
     color: #e50418;
+}
+.title-hero{
+    font-size: var(--title-hero-section);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color);
+}
+.span-title{
+    color: #e50418;
+}
+.p-hero{
+    font-size: var(--paragraph-size);
+    line-height: 2rem;
+}
+.right-hero{
+    background-image: url(/assets/Ellipse-15-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p2-hero{
+    font-size: var(--paragraph-size);
+    color: #aaaaa6;
+}
+.btn-hero-div button{
+    color: var(--buttons-text-color);
+    box-shadow: var(--buttons-shadow);
+    padding: 0.8rem 2.3rem 0.8rem 2.3rem;
+    font-weight: 500;
+}
+.btn-hero1{
+    background-color: var(--secondary-buttons-color);
+}
+.btn-hero2{
+    background-color: var(--primary-buttons-color);
+}
+.btn-hero2 i{
+    position: relative;
+    top: 3px;
+    left: -5px;
 }

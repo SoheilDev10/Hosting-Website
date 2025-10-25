@@ -58,5 +58,9 @@ function Main() {
             }, 800);
         }
     });
+    document.addEventListener('click', (e) => {
+        if (!modalSearch.contains(e.target) && !modal.classList.contains("hidden") && !btnSearch.contains(e.target))
+            btnCloseModalSr.click();
+    });
 }
 document.addEventListener('DOMContentLoaded', Main);
