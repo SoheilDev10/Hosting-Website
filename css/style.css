@@ -5,7 +5,8 @@
     --header-menu-size:1rem;
     --header-menu-mobile-size:1.3rem;    
     --headeing-size:1.87rem;
-    --heading-text-color:#2f3f4d;
+    --heading-text-color1:#2f3f4d;
+    --heading-text-color2:white;
     --heading-font-weight:800;
     --title-hero-section:2.3rem;
     --primary-buttons-color:#e50418;
@@ -179,8 +180,32 @@ a{
 .btn-hero2{
     background-color: var(--primary-buttons-color);
 }
-.btn-hero2 i{
+.btn-hero-div i{
     position: relative;
     top: 3px;
     left: -5px;
+}
+#servises{
+    background-color: #e50418;
+    background-image: url("/assets/plans-pattern.png");
+    background-size: cover;
+}
+#servises h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color2);
+    font-weight: var(--heading-font-weight);
+}
+.name-host{
+    background-color: #fafafa;
+}
+.button-host{
+    background-color: var(--secondary-buttons-color);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button-host:hover{
+    background-color: var(--secondary-buttons-color-hover);
+}
+.icon-props{
+    color: #e50418;
 }
