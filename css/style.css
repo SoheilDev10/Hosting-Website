@@ -251,3 +251,33 @@ a{
 .items-reason p{
     color: #aaaaa6;
 }
+.about-right h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color1);
+    font-weight: var(--heading-font-weight);
+}
+.about-right button{
+    box-shadow: var(--buttons-shadow);
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+}
+.about-right .btn1{
+    background-color: var(--secondary-buttons-color);
+}
+.about-right  .btn2{
+    background-color: var(--primary-buttons-color);
+}
+.about-right p{
+    line-height: 2.2rem;
+}
+.about-right{
+    background-image: url(/assets/Ellipse-15-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left-props{
+    background-image: url(/assets/Ellipse-15-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
