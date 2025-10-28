@@ -116,9 +116,9 @@ function AddServises() {
         holderServises.append(host);
     })
     const rightItem = holderServises.children[0];
-    rightItem.classList.add("mt-6");
+    rightItem.classList.add("lg:mt-6","mt-0");
     const leftItem = holderServises.children[2];
-    leftItem.classList.add("mt-6");
+    leftItem.classList.add("lg:mt-6","mt-0");
     const allHosts = [...document.querySelectorAll(".host-servise")];
     allHosts.forEach(all => {
         all.classList.add("transition-all", "duration-500", "hover:-translate-y-3");

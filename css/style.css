@@ -209,3 +209,32 @@ a{
 .icon-props{
     color: #e50418;
 }
+.left-props h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color1);
+    font-weight: var(--heading-font-weight);
+}
+.props-div .rred{
+    color: #e50418;
+}
+.props-div .bblack{
+    color: #293948;
+}
+.props-div p{
+    font-size: var(--paragraph-size);
+}
+.left-props .btn1{
+    background-color: var(--secondary-buttons-color);
+}
+.left-props .btn2{
+    background-color: var(--primary-buttons-color);
+}
+.left-props button{
+    box-shadow: var(--buttons-shadow);
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+}
+.left-props button i{
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
