@@ -238,3 +238,16 @@ a{
     top: 3px;
     left: -5px;
 }
+#reasons h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color1);
+    font-weight: var(--heading-font-weight);
+}
+.items-reason i{
+    color: #e50418;
+    background-color: #f1f2f2;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+.items-reason p{
+    color: #aaaaa6;
+}
