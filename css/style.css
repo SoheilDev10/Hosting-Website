@@ -83,12 +83,18 @@ a{
         padding-right: var(--padding-left-and-right-lg);
         padding-left: var(--padding-left-and-right-lg);
     }
+    #join-newsletter{
+        width: calc(100% - 5rem);
+    }
     
 }
-@media (min-width:641px) and (max-width:768px){
+@media (max-width:768px){
     .cont{
         padding-right: var(--padding-left-and-right-tablet);
         padding-left: var(--padding-left-and-right-tablet);
+    }
+    #join-newsletter{
+        width: calc(100% - 4rem);
     }
 }
 @media (max-width:640px){
@@ -99,7 +105,9 @@ a{
     .title-hero{
         width: 95%
     }
-
+    #join-newsletter{
+        width: calc(100% - 2rem);
+    }
 }
 .btn-menu{
     background-color: var(--bg-color-icons);
@@ -280,4 +288,32 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+#join-newsletter{
+    width: calc(100% - 10rem);
+    background-image: url("/assets/Frame-139.png");
+    background-size: cover;
+}
+#join-newsletter h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color2);
+    font-weight: var(--heading-font-weight);
+    position: relative;
+}
+#join-newsletter h3::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #e50418;
+    display: block;
+    margin-top: 8px;
+}
+.join button{
+    background-color: var(--primary-buttons-color);
+}
+.join button:hover{
+    background-color: var(--primary-buttons-color-hover);
+}
+#servises{
+    width: calc(100% - 10rem);
 }
