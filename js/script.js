@@ -84,11 +84,11 @@ const hosting = [{
         "پنجاه گیگابایت حجم", "هارد پرسرعت NVME", "ترافیک نامحدود", "دایرکت ادمین,سی پنل", "گواهی SSL رایگان", "DNS اختصاصی رایگان", "Hetzner, OVH"
     ]
 }];
-
+//Add servises to website
 function AddServises() {
     hosting.forEach(item => {
         const host = document.createElement("div");
-        host.classList.add("host-servise", "flex", "gap-y-5", "bg-white", "rounded-2xl", "p-4", "pt-10", "flex-col", "cursor-pointer", "lg:w-3/12","w-10/12", "items-center");
+        host.classList.add("host-servise", "flex", "gap-y-5", "bg-white", "rounded-2xl", "p-4", "pt-10", "flex-col", "cursor-pointer", "lg:w-3/12", "w-10/12", "items-center");
         const h5 = document.createElement("h5");
         h5.className = "text-xl font-bold text-black p-3 rounded-sm name-host text-center";
         h5.textContent = item.name;
@@ -116,9 +116,9 @@ function AddServises() {
         holderServises.append(host);
     })
     const rightItem = holderServises.children[0];
-    rightItem.classList.add("lg:mt-6","mt-0");
+    rightItem.classList.add("lg:mt-6", "mt-0");
     const leftItem = holderServises.children[2];
-    leftItem.classList.add("lg:mt-6","mt-0");
+    leftItem.classList.add("lg:mt-6", "mt-0");
     const allHosts = [...document.querySelectorAll(".host-servise")];
     allHosts.forEach(all => {
         all.classList.add("transition-all", "duration-500", "hover:-translate-y-3");
@@ -127,4 +127,27 @@ function AddServises() {
     const middleItemBtn = middleItem.querySelector("button");
     middleItemBtn.style.backgroundColor = "#e50418";
 }
+//Coments carousel
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    rtl:true,
+    margin: 20,
+    nav: false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    smartSpeed:1500,
+    responsive: {
+        0: {
+            items: 1
+        },
+        640: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
 document.addEventListener('DOMContentLoaded', Main);

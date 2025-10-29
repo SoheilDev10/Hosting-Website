@@ -188,11 +188,6 @@ a{
 .btn-hero2{
     background-color: var(--primary-buttons-color);
 }
-.btn-hero-div i{
-    position: relative;
-    top: 3px;
-    left: -5px;
-}
 #servises{
     background-color: #e50418;
     background-image: url("/assets/plans-pattern.png");
@@ -240,11 +235,6 @@ a{
 .left-props button{
     box-shadow: var(--buttons-shadow);
     padding: 0.7rem 1.8rem 0.7rem 1.8rem;
-}
-.left-props button i{
-    position: relative;
-    top: 3px;
-    left: -5px;
 }
 #reasons h3{
     font-size: var(--headeing-size);
@@ -317,3 +307,55 @@ a{
 #servises{
     width: calc(100% - 10rem);
 }
+#coments h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color1);
+    font-weight: var(--heading-font-weight);
+}
+#coments{
+    background-image: url("/assets/map-2.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.item-coments p{
+    color: #aaaaa6;
+}
+.info-person .pers{
+    background-color: #f1f2f2;
+}
+.owl-carousel .item img{
+    max-width: 3rem;
+}
+.top-footer{
+    background-color: #e50418;
+}
+.all-links a{
+    font-size: 1.3rem;
+    color: #aaaaa6;
+    transition: all 0.3s;
+}
+.all-links a:hover{
+    color: #e50418;
+}
+.middle-footer h5{
+    font-size: 1.5rem;
+}
+.footer-list{
+    list-style-type:disc;
+}
+.logo-footer p{
+    color: #aaaaa6;
+}
+.bottom-footer{
+    background-color: #aaaaa646;
+}
+.media button i{
+    color: #e50418;
+}
+.media button:hover{
+    background-color: #e50418;
+}
+.media button:hover i{
+    color: white;
+}
+
