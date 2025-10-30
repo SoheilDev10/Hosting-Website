@@ -94,8 +94,11 @@ a{
         padding-left: var(--padding-left-and-right-tablet);
     }
     #join-newsletter{
-        width: calc(100% - 4rem);
+        width: calc(100% - 4rem) !important;
     }
+        #servises{
+    width: calc(100% - 4rem) !important;
+}
 }
 @media (max-width:640px){
     .cont{
@@ -106,8 +109,11 @@ a{
         width: 95%
     }
     #join-newsletter{
-        width: calc(100% - 2rem);
+        width: calc(100% - 2rem) !important;
     }
+    #servises{
+    width: calc(100% - 2rem) !important;
+}
 }
 .btn-menu{
     background-color: var(--bg-color-icons);
@@ -357,5 +363,8 @@ a{
 }
 .media button:hover i{
     color: white;
+}
+.items-reason{
+    transition: all 0.3s;
 }
 

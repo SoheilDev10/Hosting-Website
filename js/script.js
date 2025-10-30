@@ -130,14 +130,14 @@ function AddServises() {
 //Coments carousel
 $('.owl-carousel').owlCarousel({
     loop: true,
-    rtl:true,
+    rtl: true,
     margin: 20,
     nav: false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:6000,
-    autoplayHoverPause:true,
-    smartSpeed:1500,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
+    smartSpeed: 1500,
     responsive: {
         0: {
             items: 1

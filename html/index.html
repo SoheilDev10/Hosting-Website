@@ -23,6 +23,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -99,6 +100,8 @@
                             class="menu-link-mobile">درباره ما</a></li>
                     <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#"
                             class="menu-link-mobile">تماس با ما</a></li>
+                    <li class="menu-items-mobile border-b border-black/20 pb-3 w-full"><a href="#"
+                            class="menu-link-mobile">پنل کاربری</a></li>
                 </ul>
                 <button class="btns-offcanvas btn-register-mobile w-full rounded-full p-3" type="button">ثبت
                     نام</button>
@@ -109,7 +112,8 @@
     </header>
     <main>
         <section id="hero-section" class="cont flex flex-col lg:flex-row mt-10">
-            <div class="right-hero flex flex-col justify-center w-full lg:w-7/12 gap-y-5">
+            <div class="right-hero flex flex-col justify-center w-full lg:w-7/12 gap-y-5" data-aos="fade-left"
+                data-aos-duration="1000" data-aos-delay="300">
                 <h2 class="title-hero mb-6">بهترین هاست و سرور های وردپرسی با <span class="span-title">کیان هاست</span>
                 </h2>
                 <p class="p-hero w-10/12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
@@ -129,7 +133,8 @@
                             class="fi fi-rr-angle-small-left text-lg block leading-none"></i></button>
                 </div>
             </div>
-            <div class="left-hero w-full lg:w-5/12 flex items-center">
+            <div class="left-hero w-full lg:w-5/12 flex items-center" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-delay="700">
                 <img src="/assets/hero-img-server.png" class="lg:w-full md:w-9/12 w-11/12 order-2 lg:order-1">
             </div>
         </section>
@@ -141,7 +146,7 @@
         </section>
         <section id="props-host" class="cont flex flex-col-reverse lg:flex-row items-center lg:items-start mt-8">
             <div class="right-props lg:w-6/12 w-full flex flex-col items-center">
-                <img src="/assets/Frame-128-1.png" class="w-full">
+                <img src="/assets/Frame-128-1.png" class="w-full" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <!--<img src="/assets/Frame-127.png" class="w-72 relative -top-72 left-36 hidden lg:block">-->
             </div>
             <div class="left-props lg:w-6/12 w-full flex flex-col lg:mt-32 mt-0 gap-y-6 pr-5">
@@ -173,30 +178,26 @@
         </section>
         <section id="reasons" class=" cont flex flex-col mt-8 gap-y-6">
             <h3 class="title-reasons text-center">چرا کیان هاست را انتخاب کنیم؟!</h3>
-            <div class="reasons-cont grid lg:grid-cols-4 grid-cols-2 gap-x-5 gap-y-5 mt-5">
-                <div
-                    class="items-reason flex flex-col gap-y-5 p-5 bg-white rounded-xl shadow-xl cursor-pointer lg:mt-12 mt-0 transition-all duration-500 hover:-translate-y-5">
+            <div class="reasons-cont grid lg:grid-cols-4 grid-cols-2 lg:gap-x-5 gap-x-3 lg:gap-y-5 gap-y-3 mt-5">
+                <div class="items-reason flex flex-col gap-y-5 p-2 lg:p-5 bg-white rounded-xl shadow-xl cursor-pointer lg:mt-12 mt-0 transition-all duration-500 hover:-translate-y-5">
                     <i class="fi fi-sr-headphones text-3xl rounded-full inline-block w-fit"></i>
                     <h5 class="items-title text-2xl font-medium">پشتیبانی دوستانه</h5>
                     <p>لــورم ایپسوم متــن ساختــگی با تولید سادگی نامفهوم از صنعت چـاپ است با استفاده از طراحان گرافیک
                         می باشد که لورم ایپسوم متن ساختگی است.</p>
                 </div>
-                <div
-                    class="items-reason flex flex-col gap-y-5 p-5 bg-white rounded-xl shadow-xl cursor-pointer transition-all duration-500 hover:-translate-y-5">
+                <div class="items-reason flex flex-col gap-y-5 p-2 lg:p-5 bg-white rounded-xl shadow-xl cursor-pointer transition-all duration-500 hover:-translate-y-5">
                     <i class="fi fi-ss-badge-percent text-3xl rounded-full block leading-none w-fit"></i>
                     <h5 class="items-title text-2xl font-medium">کاهش هزینه ها</h5>
                     <p>لــورم ایپسوم متــن ساختــگی با تولید سادگی نامفهوم از صنعت چـاپ است با استفاده از طراحان گرافیک
                         می باشد که لورم ایپسوم متن ساختگی است.</p>
                 </div>
-                <div
-                    class="items-reason flex flex-col gap-y-5 p-5 bg-white rounded-xl shadow-xl cursor-pointer lg:mt-12 mt-0 transition-all duration-500 hover:-translate-y-5">
+                <div class="items-reason flex flex-col gap-y-5 p-2 lg:p-5 bg-white rounded-xl shadow-xl cursor-pointer lg:mt-12 mt-0 transition-all duration-500 hover:-translate-y-5">
                     <i class="fi fi-sr-alarm-clock text-3xl rounded-full block leading-none w-fit"></i>
                     <h5 class="items-title text-2xl font-medium">افزایش سرعت سایت</h5>
                     <p>لــورم ایپسوم متــن ساختــگی با تولید سادگی نامفهوم از صنعت چـاپ است با استفاده از طراحان گرافیک
                         می باشد که لورم ایپسوم متن ساختگی است.</p>
                 </div>
-                <div
-                    class="items-reason flex flex-col gap-y-5 p-5 bg-white rounded-xl shadow-xl cursor-pointer transition-all duration-500 hover:-translate-y-5">
+                <div class="items-reason flex flex-col gap-y-5 p-2 lg:p-5 bg-white rounded-xl shadow-xl cursor-pointer transition-all duration-500 hover:-translate-y-5">
                     <i class="fi fi-ss-shield-check text-3xl rounded-full block leading-none w-fit"></i>
                     <h5 class="items-title text-2xl font-medium">افزایش امنیت سایت</h5>
                     <p class="text-md">لــورم ایپسوم متــن ساختــگی با تولید سادگی نامفهوم از صنعت چـاپ است با استفاده
@@ -224,7 +225,7 @@
                 </div>
             </div>
             <div class="about-left flex lg:w-6/12 w-full">
-                <img src="/assets/Frame-125-1.png" class="w-full">
+                <img src="/assets/Frame-125-1.png" class="w-full" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
             </div>
         </section>
         <section id="join-newsletter" class="flex flex-col items-center gap-y-7 mr-auto ml-auto p-5 rounded-md mt-8">
@@ -421,7 +422,11 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/script.js"></script>
+    <script>
+        AOS.init({once:true});
+    </script>
 </body>
 
 </html>
