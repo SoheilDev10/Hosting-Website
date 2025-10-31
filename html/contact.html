@@ -6,12 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تماس با ما</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/assets/favvvv-min-100x100.png" type="image/x-icon">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <header>
 
     </header>
+
+    <main>
+        <section id="about-us" class="flex flex-col lg:flex-row cont mt-7 bg-cover bg-no-repeat bg-center">
+            <div class="right-about flex flex-col justify-center w-full lg:w-7/12 gap-y-5">
+                <h3>ارتباط با کیان هاست</h3>
+                <p class="text-md">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                    گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                    داشت.چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                    مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                <div class="flex gap-x-5">
+                    <button type="button"
+                        class="rounded-full flex justify-center items-center text-white text-lg btn1 btns-about cursor-pointer transition-all duration-300 hover:-translate-y-3">درباره
+                        ما<i class="fi fi-rr-users-alt block leading-none"></i></button>
+                    <button type="button"
+                        class="rounded-full flex justify-center items-center text-white text-lg btn2 btns-about cursor-pointer transition-all duration-300 hover:-translate-y-3">خرید
+                        کنید<i class="fi fi-rr-angle-small-left block leading-none"></i></button>
+                </div>
+            </div>
+            <div class="left-about flex items-center w-full lg:w-5/12">
+                <img src="/assets/Frame-29-1-1.png" class="w-full mt-5">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        fetch('/html/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+                const script = document.createElement('script');
+                script.src = '/js/header.js';
+                script.onload = () => {
+                    Header();
+                };
+                document.body.appendChild(script);
+            })
+            .catch(err => console.log("we have a problem", err))
+
+        fetch('/html/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            })
+            .catch(err => console.log("we have a problem", err))
+    </script>
+    <script src="/js/contact.js"></script>
 </body>
 
 </html>

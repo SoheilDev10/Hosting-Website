@@ -370,4 +370,24 @@ a{
 .to-up{
     background-color: #e50418;
 }
-
+.right-about h3{
+    font-size: var(--headeing-size);
+    color: var(--heading-text-color1);
+    font-weight: var(--heading-font-weight);
+}
+.right-about p{
+    line-height: 2rem;
+}
+.right-about{
+    background-image: url("/assets/Ellipse-15-1.png");
+}
+#about-us .btns-about{
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+    box-shadow: var(--buttons-shadow);
+}
+#about-us .btn1{
+    background-color: var(--secondary-buttons-color);
+}
+#about-us .btn2{
+    background-color: var(--primary-buttons-color);
+}

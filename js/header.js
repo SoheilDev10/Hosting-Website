@@ -8,7 +8,8 @@
      const modal = document.querySelector(".modal");
      const modalSearch = document.querySelector(".modal-search");
      const btnCloseModalSr = document.querySelector(".btn-close-modal-search");
-     
+     const menuItems = document.querySelectorAll(".menu-link");
+
      btnMenu.addEventListener('click', () => {
          offCanvas.classList.add("flex");
          offCanvas.classList.remove("hidden");
@@ -62,5 +63,12 @@
          if (!modalSearch.contains(e.target) && !modal.classList.contains("hidden") && !btnSearch.contains(e.target))
              btnCloseModalSr.click();
      });
+     //Create active pages
+     menuItems.forEach(item => {
+         item.addEventListener('click', () => {
+            menuItems.forEach(i=>i.classList.remove("active"))
+            item.classList.add("active");
+         });
+     })
  }
  Header()
