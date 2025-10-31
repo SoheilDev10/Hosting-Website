@@ -1,70 +1,29 @@
-const btnMenu = document.querySelector(".btn-menu");
-const btnClose = document.querySelector(".btn-close");
-const offCanvas = document.querySelector(".offCanvas");
-const divCanvas = document.querySelector(".div-canvas");
-const btnSearch = document.querySelector(".btn-search");
-const modal = document.querySelector(".modal");
-const modalSearch = document.querySelector(".modal-search");
-const btnCloseModalSr = document.querySelector(".btn-close-modal-search");
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
 const holderServises = document.querySelector(".holder-servises");
 const toUpBtn = document.querySelector(".to-up");
 
 function Main() {
-    //Create menu for mobile
-    btnMenu.addEventListener('click', () => {
-        offCanvas.classList.add("flex");
-        offCanvas.classList.remove("hidden");
-        setTimeout(() => {
-            divCanvas.classList.add("translate-x-0");
-            divCanvas.classList.remove("translate-x-full");
-        }, 200);
-    });
-    btnClose.addEventListener('click', () => {
-        divCanvas.classList.remove("translate-x-0");
-        divCanvas.classList.add("translate-x-full");
-        setTimeout(() => {
-            offCanvas.classList.remove("flex");
-            offCanvas.classList.add("hidden");
-        }, 700);
-    });
-    document.addEventListener('click', (e) => {
-        if (offCanvas.classList.contains("flex") && !divCanvas.contains(e.target) && !btnMenu.contains(e.target))
-            btnClose.click();
-    });
-    //Create modal search
-    btnSearch.addEventListener('click', () => {
-        if (modal.classList.contains("hidden")) {
-            modal.classList.add("flex");
-            modal.classList.remove("hidden");
-            setTimeout(() => {
-                modalSearch.classList.add("-translate-y-0");
-                modalSearch.classList.remove("-translate-y-full");
-            }, 300);
-            setTimeout(() => {
-                modal.classList.add("items-center");
-            }, 350);
-        }
-    });
-    btnCloseModalSr.addEventListener('click', () => {
-        if (!modal.classList.contains("hidden")) {
-            setTimeout(() => {
-                modalSearch.classList.remove("-translate-y-0");
-                modalSearch.classList.add("translate-y-full");
-            }, 300);
-            setTimeout(() => {
-                modal.classList.remove("flex");
-                modal.classList.add("hidden");
-                modalSearch.classList.remove("translate-y-full");
-                modalSearch.classList.add("-translate-y-full");
-                modal.classList.remove("items-center");
-            }, 800);
-        }
-    });
-    document.addEventListener('click', (e) => {
-        if (!modalSearch.contains(e.target) && !modal.classList.contains("hidden") && !btnSearch.contains(e.target))
-            btnCloseModalSr.click();
-    });
-    AddServises();
+    fetch('/html/header.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data;
+            const script = document.createElement('script');
+            script.src = '/js/header.js';
+            script.onload = () => {
+                Header();
+            };
+            document.body.appendChild(script);
+        })
+        .catch(err => console.log("we have a problem", err))
+    fetch('/html/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            footer.innerHTML = data;
+        })
+        .catch(err => console.log("we have a problem", err))
+    loadCarousel()
+    addServises();
     handdleScrollY();
 }
 const hosting = [{
@@ -87,7 +46,7 @@ const hosting = [{
     ]
 }];
 //Add servises to website
-function AddServises() {
+function addServises() {
     hosting.forEach(item => {
         const host = document.createElement("div");
         host.classList.add("host-servise", "flex", "gap-y-5", "bg-white", "rounded-2xl", "p-4", "pt-10", "flex-col", "cursor-pointer", "lg:w-3/12", "w-10/12", "items-center");
@@ -130,28 +89,30 @@ function AddServises() {
     middleItemBtn.style.backgroundColor = "#e50418";
 }
 //Coments carousel
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    rtl: true,
-    margin: 10,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 6000,
-    autoplayHoverPause: true,
-    smartSpeed: 1500,
-    responsive: {
-        0: {
-            items: 1
-        },
-        640: {
-            items: 2
-        },
-        1000: {
-            items: 3
+function loadCarousel() {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        rtl: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+        smartSpeed: 1500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            640: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
         }
-    }
-})
+    })
+}
 //Create handdle scroll
 const handdleScrollY = () => {
     const target = 316;
