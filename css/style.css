@@ -37,6 +37,9 @@
 body{
     background-color: var(--bg-body);
 }
+html{
+    scroll-behavior: smooth;
+}
 .cont{
     padding-right: var(--padding-left-and-right);
     padding-left: var(--padding-left-and-right);
@@ -364,7 +367,7 @@ a{
 .media button:hover i{
     color: white;
 }
-.items-reason{
-    transition: all 0.3s;
+.to-up{
+    background-color: #e50418;
 }
 

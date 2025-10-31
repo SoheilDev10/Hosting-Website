@@ -7,6 +7,7 @@ const modal = document.querySelector(".modal");
 const modalSearch = document.querySelector(".modal-search");
 const btnCloseModalSr = document.querySelector(".btn-close-modal-search");
 const holderServises = document.querySelector(".holder-servises");
+const toUpBtn = document.querySelector(".to-up");
 
 function Main() {
     //Create menu for mobile
@@ -64,6 +65,7 @@ function Main() {
             btnCloseModalSr.click();
     });
     AddServises();
+    handdleScrollY();
 }
 const hosting = [{
     name: "هاست وردپرس پایه",
@@ -131,7 +133,7 @@ function AddServises() {
 $('.owl-carousel').owlCarousel({
     loop: true,
     rtl: true,
-    margin: 20,
+    margin: 10,
     nav: false,
     dots: false,
     autoplay: true,
@@ -150,4 +152,26 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+//Create handdle scroll
+const handdleScrollY = () => {
+    const target = 316;
+    let state = true;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= target && state == true) {
+            toUpBtn.classList.toggle("hidden");
+            state = false;
+        } else {
+            if (window.scrollY <= target) {
+                state = true;
+                toUpBtn.classList.add("hidden");
+            }
+        }
+    });
+    toUpBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 document.addEventListener('DOMContentLoaded', Main);
