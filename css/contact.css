@@ -1,0 +1,33 @@
+@import url("style.css");
+
+#about-us .btns-about{
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+    box-shadow: var(--buttons-shadow);
+}
+#about-us .btn1{
+    background-color: var(--secondary-buttons-color);
+}
+#about-us .btn2{
+    background-color: var(--primary-buttons-color);
+}
+.right-ways h3{
+    color: var(--heading-text-color1);
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+}
+.right-ways .submit{
+    background-color: var(--primary-buttons-color);
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+}
+.right-ways .submit:hover{
+    background-color: var(--primary-buttons-color-hover);
+}
+.loc i{
+    color: #e50418;
+}
+.left-ways button{
+    color: #e50418;
+}
+.left-ways button:hover{
+    color: #2f3f4d;
+}

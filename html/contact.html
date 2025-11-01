@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تماس با ما</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="shortcut icon" href="/assets/favvvv-min-100x100.png" type="image/x-icon">
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -54,6 +55,81 @@
                 <img src="/assets/Frame-29-1-1.png" class="w-full mt-5">
             </div>
         </section>
+        <section id="ways-contact" class="cont flex mt-10 gap-x-5">
+            <div class="right-ways w-6/12 flex flex-col gap-y-6">
+                <h3>مسیر های گفتگو با ما</h3>
+                <form action="#" method="post">
+                    <fieldset class="flex flex-col gap-y-3">
+                        <div class="flex gap-x-4">
+                            <input type="text" class="bg-white p-4 rounded-md w-full focus:outline-none"
+                                placeholder="نام">
+                            <input type="text" class="bg-white p-4 rounded-md w-full focus:outline-none"
+                                placeholder="نام خانوادگی">
+                        </div>
+                        <div class="flex gap-x-4">
+                            <input type="text" class="bg-white p-4 rounded-md w-full focus:outline-none"
+                                placeholder="موضوع پیام">
+                            <input type="email" class="bg-white p-4 rounded-md w-full focus:outline-none"
+                                placeholder="آدرس ایمیل">
+                        </div>
+                        <textarea name="message" id="message" class="bg-white w-full p-4 h-32 focus:outline-none"
+                            placeholder="پیام..."></textarea>
+                        <button type="submit"
+                            class="submit text-white text-md rounded-full transition-all duration-300 cursor-pointer font-semibold self-end">ارسال
+                            پیام</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="left-ways flex flex-col w-6/12 gap-y-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3388.7579975103354!2d54.362978924579664!3d31.85879997406086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDUxJzMxLjciTiA1NMKwMjEnMzcuNSJF!5e0!3m2!1sfa!2s!4v1762019441996!5m2!1sfa!2s"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="rounded-md grayscale hover:grayscale-0 transition-all duration-500"></iframe>
+                <div class="flex w-full justify-around">
+                    <div
+                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-md">
+                        <i class="fi fi-sr-phone-call text-3xl"></i>
+                        <p class="text-lg text-black/50">۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    </div>
+                    <div
+                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-md">
+                        <i class="fi fi-sr-marker text-3xl"></i>
+                        <p class="text-lg text-black/50">یزد-بلوار دانشجو</p>
+                    </div>
+                    <div
+                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-md">
+                        <i class="fi fi-sr-envelope text-3xl"></i>
+                        <p class="text-lg text-black/50">info@kianhost.com</p>
+                    </div>
+                </div>
+                <div class="flex w-full justify-between items-center bg-white rounded-xl shadow-md p-3">
+                    <p class="text-lg text-black">مارا در شبکه های اجتماعی دنبال کنید.</p>
+                    <div class="socials flex gap-x-4">
+                        <button type="button"
+                            class="text-lg transition-all duration-300 cursor-pointer flex items-center justify-center">
+                            <i class="fi fi-brands-facebook block leading-none"></i>
+                        </button>
+                        <button type="button"
+                            class="text-lg transition-all duration-300 cursor-pointer flex items-center justify-center">
+                            <i class="fi fi-brands-twitter block leading-none"></i>
+                        </button>
+                        <button type="button"
+                            class="text-lg transition-all duration-300 cursor-pointer flex items-center justify-center">
+                            <i class="fi fi-brands-youtube block leading-none"></i>
+                        </button>
+                        <button type="button"
+                            class="text-lg transition-all duration-300 cursor-pointer flex items-center justify-center">
+                            <i class="fi fi-brands-telegram block leading-none"></i>
+                        </button>
+                        <button type="button"
+                            class="text-lg transition-all duration-300 cursor-pointer flex items-center justify-center">
+                            <i class="fi fi-brands-instagram  block leading-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
@@ -79,7 +155,7 @@
             })
             .catch(err => console.log("we have a problem", err))
     </script>
-    <script src="/js/contact.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
