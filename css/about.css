@@ -1,0 +1,26 @@
+@import url("about.css");
+#top-about h3{
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color3);
+}
+#top-about button{
+    background-color: var(--primary-buttons-color);
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+    box-shadow: var(--buttons-shadow);
+}
+#top-about {
+    background-image: url("/assets/Ellipse-15-1.png");
+}
+.info-about h5{
+    color: var(--heading-text-color1);
+}
+.info-about i{
+    color: #e50418;
+}
+.info-prop h5{
+    color: var(--heading-text-color1);
+}
+.info-prop i{
+    color: #e50418;
+}

@@ -9,6 +9,7 @@
      const modalSearch = document.querySelector(".modal-search");
      const btnCloseModalSr = document.querySelector(".btn-close-modal-search");
      const menuItems = document.querySelectorAll(".menu-link");
+     const body = document.querySelector("body");
 
      btnMenu.addEventListener('click', () => {
          offCanvas.classList.add("flex");
@@ -35,6 +36,7 @@
          if (modal.classList.contains("hidden")) {
              modal.classList.add("flex");
              modal.classList.remove("hidden");
+             body.classList.add("overflow-y-hidden");
              setTimeout(() => {
                  modalSearch.classList.add("-translate-y-0");
                  modalSearch.classList.remove("-translate-y-full");
@@ -56,6 +58,7 @@
                  modalSearch.classList.remove("translate-y-full");
                  modalSearch.classList.add("-translate-y-full");
                  modal.classList.remove("items-center");
+                 body.classList.remove("overflow-y-hidden");
              }, 800);
          }
      });
@@ -66,8 +69,8 @@
      //Create active pages
      menuItems.forEach(item => {
          item.addEventListener('click', () => {
-            menuItems.forEach(i=>i.classList.remove("active"))
-            item.classList.add("active");
+             menuItems.forEach(i => i.classList.remove("active"))
+             item.classList.add("active");
          });
      })
  }
