@@ -25,6 +25,7 @@ function Main() {
     loadCarousel()
     addServises();
     handdleScrollY();
+    //accordion();
 }
 const hosting = [{
     name: "هاست وردپرس پایه",
@@ -134,5 +135,26 @@ const handdleScrollY = () => {
             behavior: 'smooth'
         });
     });
+}
+const accordion = () => {
+    const question = document.querySelectorAll(".accordion");
+    question.forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.querySelector(".answer");
+            const stateIcon = item.querySelector(".state-icon");
+            question.forEach(el => {
+                el.classList.remove("opened");
+            })
+            item.classList.toggle("opened");
+            if (item.classList.contains("opened")) {
+                answer.classList.remove("hidden", "h-0");
+                stateIcon.className = "fi fi-br-minus";
+            } else {
+                answer.classList.add("hidden", "h-0");
+                stateIcon.className = "fi fi-br-plus";
+            }
+        });
+    })
+
 }
 document.addEventListener('DOMContentLoaded', Main);

@@ -31,3 +31,11 @@
 .left-ways button:hover{
     color: #2f3f4d;
 }
+.right-question h3{
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color1);
+}
+.tob-accordion{
+    background-color: #2f3f4d;
+}

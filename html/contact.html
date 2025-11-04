@@ -22,6 +22,7 @@
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -55,24 +56,25 @@
                 <img src="/assets/Frame-29-1-1.png" class="w-full mt-5">
             </div>
         </section>
-        <section id="ways-contact" class="cont flex mt-10 gap-x-5">
-            <div class="right-ways w-6/12 flex flex-col gap-y-6">
+        <section id="ways-contact" class="cont flex flex-col lg:flex-row mt-10 lg:gap-x-5 gap-y-5">
+            <div class="right-ways w-full lg:w-6/12 flex flex-col gap-y-6">
                 <h3>مسیر های گفتگو با ما</h3>
                 <form action="#" method="post">
                     <fieldset class="flex flex-col gap-y-3">
-                        <div class="flex gap-x-4">
+                        <div class="flex flex-col lg:flex-row gap-y-4 lg:gap-x-4">
                             <input type="text" class="bg-white p-4 rounded-md w-full focus:outline-none"
                                 placeholder="نام">
                             <input type="text" class="bg-white p-4 rounded-md w-full focus:outline-none"
                                 placeholder="نام خانوادگی">
                         </div>
-                        <div class="flex gap-x-4">
+                        <div class="flex flex-col lg:flex-row gap-y-4 lg:gap-x-4">
                             <input type="text" class="bg-white p-4 rounded-md w-full focus:outline-none"
                                 placeholder="موضوع پیام">
                             <input type="email" class="bg-white p-4 rounded-md w-full focus:outline-none"
                                 placeholder="آدرس ایمیل">
                         </div>
-                        <textarea name="message" id="message" class="bg-white w-full p-4 h-32 focus:outline-none"
+                        <textarea name="message" id="message"
+                            class="bg-white w-full p-4 h-32 rounded-md focus:outline-none"
                             placeholder="پیام..."></textarea>
                         <button type="submit"
                             class="submit text-white text-md rounded-full transition-all duration-300 cursor-pointer font-semibold self-end">ارسال
@@ -80,30 +82,31 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="left-ways flex flex-col w-6/12 gap-y-6">
+            <div class="left-ways flex flex-col w-full lg:w-6/12 gap-y-6">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3388.7579975103354!2d54.362978924579664!3d31.85879997406086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDUxJzMxLjciTiA1NMKwMjEnMzcuNSJF!5e0!3m2!1sfa!2s!4v1762019441996!5m2!1sfa!2s"
                     width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     class="rounded-md grayscale hover:grayscale-0 transition-all duration-500"></iframe>
-                <div class="flex w-full justify-around">
+                <div class="flex flex-col lg:flex-row gap-y-3 w-full justify-around">
                     <div
-                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-md">
+                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-sm">
                         <i class="fi fi-sr-phone-call text-3xl"></i>
                         <p class="text-lg text-black/50">۰۲۱-۱۲۳۴۵۶۷۸</p>
                     </div>
                     <div
-                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-md">
+                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-sm">
                         <i class="fi fi-sr-marker text-3xl"></i>
                         <p class="text-lg text-black/50">یزد-بلوار دانشجو</p>
                     </div>
                     <div
-                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-md">
+                        class="loc flex flex-col gap-y-3 items-center justify-center rounded-xl bg-white pt-5 pb-5 pr-10 pl-10 shadow-sm">
                         <i class="fi fi-sr-envelope text-3xl"></i>
                         <p class="text-lg text-black/50">info@kianhost.com</p>
                     </div>
                 </div>
-                <div class="flex w-full justify-between items-center bg-white rounded-xl shadow-md p-3">
+                <div
+                    class="flex flex-col lg:flex-row gap-y-3 w-full justify-between items-center bg-white rounded-xl shadow-sm p-3">
                     <p class="text-lg text-black">مارا در شبکه های اجتماعی دنبال کنید.</p>
                     <div class="socials flex gap-x-4">
                         <button type="button"
@@ -128,6 +131,59 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="your-question" class="cont flex flex-col lg:flex-row mt-8 gap-y-5 lg:gap-x-5">
+            <div class="right-question flex flex-col justify-center gap-y-6 w-full lg:w-7/12">
+                <h3>بهترین سوالات متداول شما</h3>
+                <div class="accordion flex flex-col rounded-2xl w-full bg-white opened">
+                    <div class="tob-accordion flex w-full justify-between items-center rounded-2xl p-4 cursor-pointer">
+                        <h5 class="text-xl text-white font-bold">هاست چیست؟</h5>
+                        <i class="fi fi-br-minus text-white text-xl state-icon"></i>
+                    </div>
+                    <div class="flex max-h-32 overflow-y-scroll p-4 transition-all duration-300 answer">
+                        <p class="text-md text-black leading-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان است.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion flex flex-col rounded-2xl bg-white">
+                    <div class="tob-accordion flex w-full justify-between items-center rounded-2xl p-4 cursor-pointer">
+                        <h5 class="text-xl text-white font-bold">هاست وردپرس چیست؟</h5>
+                        <i class="fi fi-br-plus text-white text-xl state-icon"></i>
+                    </div>
+                    <div class="hidden max-h-32 overflow-y-scroll p-4 transition-all duration-300 answer">
+                        <p class="text-md text-black leading-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان است.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion flex flex-col rounded-2xl bg-white">
+                    <div class="tob-accordion flex w-full justify-between items-center rounded-2xl p-4 cursor-pointer">
+                        <h5 class="text-xl text-white font-bold">چگونه می توانم هاست بخرم؟</h5>
+                        <i class="fi fi-br-plus text-white text-xl state-icon"></i>
+                    </div>
+                    <div class="hidden max-h-0 overflow-y-scroll p-4 transition-all duration-300 answer">
+                        <p class="text-md text-black leading-7">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                            چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می
+                            باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان است.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="left-question flex justify-center w-full lg:w-5/12">
+                <img src="/assets/Frame-25-3.png" class="w-full mt-6 lg:mt-0 -z-10">
             </div>
         </section>
     </main>
@@ -155,7 +211,7 @@
             })
             .catch(err => console.log("we have a problem", err))
     </script>
-    <script src="/js/script.js"></script>
+    <script src="/js/contact.js"></script>
 </body>
 
 </html>

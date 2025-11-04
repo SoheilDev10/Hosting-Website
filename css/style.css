@@ -130,12 +130,7 @@ a{
     font-size: var(--header-menu-mobile-size);
     color: var(--header-menu-color);
 }
-#menu .active{
-    color: var(--active-menu-color);
-}
-#menu-mobile .active{
-    color: var(--active-menu-color);
-}
+
 .div-search-mobile{
     background-color: var(--bg-search-bar);
 }
