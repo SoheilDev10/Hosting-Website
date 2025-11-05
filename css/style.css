@@ -93,6 +93,9 @@ a{
     #reasons-to-choose{
         width: calc(100% -5rem);
     }
+    #newsletter-about{
+        width: calc(100% - 5rem);
+    }
 }
 @media (max-width:768px){
     .cont{
@@ -106,6 +109,9 @@ a{
     width: calc(100% - 4rem) !important;
 }
     #reasons-to-choose{
+        width: calc(100% - 4rem);
+    }
+    #newsletter-about{
         width: calc(100% - 4rem);
     }
 }
@@ -124,6 +130,9 @@ a{
     width: calc(100% - 2rem) !important;
 }
     #reasons-to-choose{
+        width: calc(100% - 2rem);
+    }
+    #newsletter-about{
         width: calc(100% - 2rem);
     }
 }

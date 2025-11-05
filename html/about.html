@@ -125,13 +125,14 @@
         </section>
         <section id="hostes-about" class="cont flex flex-col pt-40 pb-40 -mt-15 bg-cover">
             <h3 class=" text-center title-hostes">خدمات میزبانی کیان هاست</h3>
-            <div class="holder-hostes flex w-full justify-center gap-x-8 mt-7">
+            <div
+                class="holder-hostes flex flex-col lg:flex-row gap-y-5 w-full justify-center items-center lg:gap-x-8 mt-7">
 
             </div>
         </section>
-        <section id="reasons-to-choose" class="flex flex-col rounded-lg p-9 mr-auto ml-auto -mt-25">
-            <h3 class="text-center">چرا کیان هاست را انتخاب کنیم</h3>
-            <div class="w-full flex justify-center mt-10">
+        <section id="reasons-to-choose" class="flex flex-col rounded-lg p-3 lg:p-9 mr-auto ml-auto -mt-25">
+            <h3 class="text-center">چرا کیان هاست را انتخاب کنیم؟!</h3>
+            <div class="w-full flex flex-col lg:flex-row gap-y-5 justify-center mt-10">
                 <div class="resons-item flex flex-col items-center gap-y-5">
                     <img src="/assets/pinky-promise.png" class="w-4/12">
                     <h5 class="text-xl font-semibold text-white">پشتیبانی دوستانه</h5>
@@ -150,27 +151,42 @@
                 </div>
             </div>
         </section>
-        <section id="know-kian-host" class="cont flex mt-8">
-            <div class="right-know flex flex-col justify-center gap-y-5 w-7/12">
+        <section id="know-kian-host" class="cont flex flex-col lg:flex-row mt-8">
+            <div class="right-know flex flex-col justify-center gap-y-5 w-full lg:w-7/12 bg-center bg-no-repeat">
                 <h3>درباره کیان هاست بیشتر بدانید</h3>
-                <p class="text-black/50 text-sm leading-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                <p class="text-black/50 text-sm leading-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها
                     و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
                     کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
                     آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
                     ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
                     تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد.
                 </p>
-                <div class="flex gap-x-5">
-                    <button type="button" class="btn1 flex justify-center items-center rounded-full text-white text-lg cursor-pointer transition-all duration-300 hover:-translate-y-3">
-                        تکاس با ما<i class="fi fi-rr-phone-call block leading-none"></i>
+                <div class="flex gap-x-5 w-full">
+                    <button type="button"
+                        class="btn1 flex justify-center gap-x-2 items-center rounded-full text-white text-lg cursor-pointer transition-all duration-300 hover:-translate-y-3">
+                        تماس با ما<i class="fi fi-rr-phone-call block leading-none"></i>
                     </button>
-                    <button type="button" class="btn2 flex justify-center items-center rounded-full text-white text-lg cursor-pointer transition-all duration-300 hover:-translate-y-3">
+                    <button type="button"
+                        class="btn2 flex justify-center gap-x-2 items-center rounded-full text-white text-lg cursor-pointer transition-all duration-300 hover:-translate-y-3">
                         مشاهده پلن ها <i class="fi fi-rr-angle-small-left block leading-none"></i>
                     </button>
                 </div>
             </div>
-            <div class="left-know flex justify-center w-5/12">
-                <img src="/assets/Frame-25.png" class="w-full">
+            <div class="left-know flex justify-center items-center w-full lg:w-5/12">
+                <img src="/assets/Frame-25.png" class="w-full mt-7">
+            </div>
+        </section>
+        <section id="newsletter-about" class="flex flex-col items-center p-5 rounded-lg mr-auto ml-auto mt-8 bg-cover">
+            <h3 class="text-center">عضویت در خبرنامه کیان هاست</h3>
+            <div class="flex flex-col lg:flex-row justify-around items-center w-full mt-8">
+                <p class="text-white text-lg">برای اطلاع از خبر های جدید وبسایت کیان هاست عضو خبرنامه شوید.</p>
+                <div class="flex p-2 bg-white rounded-full w-full lg:w-6/12 mt-3 lg:mt-0">
+                    <input type="email" class="w-9/12 text-md lg:text-lg bg-transparent pr-3 focus:outline-none"
+                        placeholder="آدرس ایمیل خود را وارد کنید...">
+                    <button type="submit"
+                        class="w-3/12 text-white rounded-full text-lg cursor-pointer transition-all duration-300">ارسال</button>
+                </div>
             </div>
         </section>
     </main>
