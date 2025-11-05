@@ -24,3 +24,36 @@
 .info-prop i{
     color: #e50418;
 }
+#hostes-about{
+    background-image: url("/assets/plans-pattern.png");
+    background-color: #e50418;
+}
+#hostes-about .title-hostes{
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color2);
+}
+#reasons-to-choose{
+    background-color: #2f3f4d;
+    width: calc(100% - 10rem);
+}
+#reasons-to-choose h3{
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color2);
+}
+#know-kian-host .right-know{
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color1);
+}
+#know-kian-host .right-know button{
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    box-shadow: var(--buttons-shadow);
+}
+#know-kian-host .right-know .btn1{
+    background-color: var(--primary-buttons-color);
+}
+#know-kian-host .right-know .btn2{
+    background-color: var(--secondary-buttons-color);
+}
