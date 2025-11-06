@@ -1,0 +1,28 @@
+@import url("style.css");
+#buying-host .right-buying h3{
+    font-size: var(--headeing-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-text-color1);
+}
+#buying-host .right-buying{
+    background-image: url("/assets/Ellipse-15-1.png");
+}
+#buying-host .right-buying button{
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    box-shadow: var(--buttons-shadow);
+}
+#buying-host .right-buying .btn1{
+    background-color: var(--secondary-buttons-color);
+}
+#buying-host .right-buying .btn2{
+    background-color: var(--primary-buttons-color);
+}
+.tabs button .active-tab:hover{
+    color: white !important;
+}
+.tabs button:hover{
+    color: #e50418;
+}
+.tabs .active-tab{
+    background-color: var(--primary-buttons-color);
+}

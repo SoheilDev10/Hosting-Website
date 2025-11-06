@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل های ما</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/panels.css">
+    <link rel="shortcut icon" href="/assets/favvvv-min-100x100.png" type="image/x-icon">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="buying-host" class="cont flex flex-col lg:flex-row gap-y-7 lg:gap-x-5 mt-8">
+            <div class="right-buying flex flex-col justify-center gap-y-5 w-full lg:w-8/12 bg-center bg-no-repeat">
+                <h3>خرید پلن های هاست</h3>
+                <p class="text-md text-black/50 leading-7 w-10/12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                    چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                    داشت.چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                    مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                </p>
+                <div class="flex gap-x-5">
+                    <button type="button"
+                        class="btn1 text-lg text-white flex justify-center items-center rounded-full gap-x-2 transition-all duration-300 cursor-pointer hover:-translate-y-3">تماس
+                        با ما <i class="fi fi-rr-phone-call block leading-none"></i></button>
+                    <button type="button"
+                        class="btn2 text-lg text-white flex justify-center items-center rounded-full gap-x-2 transition-all duration-300 cursor-pointer hover:-translate-y-3">درباره
+                        ما <i class="fi fi-rr-users-alt block leading-none"></i></button></button>
+                </div>
+            </div>
+            <div class="left-buying flex w-full lg:w-4/12 justify-center">
+                <img src="/assets/cloud-hosting-1-768x480-2.png" class="w-full">
+            </div>
+        </section>
+        <div class="tabs flex justify-center gap-x-10 bg-white rounded-lg w-8/12 p-5 mr-auto ml-auto mt-8 shadow-lg">
+            <button type="button"
+                class="p-3 font-semibold text-lg text-white rounded-full transition-all duration-300 cursor-pointer active-tab">هاست لینوکس</button>
+            <button type="button"
+                class="p-3 font-semibold text-lg text-black rounded-full transition-all duration-300 cursor-pointer">هاست وردپرس</button>
+            <button type="button"
+                class="p-3 font-semibold text-lg text-black rounded-full transition-all duration-300 cursor-pointer">هاست ابری</button>
+            <button type="button"
+                class="p-3 font-semibold text-lg text-black rounded-full transition-all duration-300 cursor-pointer">هاست ویندوز</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        fetch('/html/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+                const script = document.createElement('script');
+                script.src = '/js/header.js';
+                script.onload = () => {
+                    Header();
+                };
+                document.body.appendChild(script);
+            })
+            .catch(err => console.log("we have a problem", err))
+
+        fetch('/html/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            })
+            .catch(err => console.log("we have a problem", err))
+    </script>
+    <script src="/js/panels.js"></script>
+</body>
+
+</html>
