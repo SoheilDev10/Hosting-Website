@@ -96,6 +96,9 @@ a{
     #newsletter-about{
         width: calc(100% - 5rem);
     }
+    #our-hostes{
+        width: calc(100% - 5rem);
+    }
 }
 @media (max-width:768px){
     .cont{
@@ -112,6 +115,9 @@ a{
         width: calc(100% - 4rem);
     }
     #newsletter-about{
+        width: calc(100% - 4rem);
+    }
+    #our-hostes{
         width: calc(100% - 4rem);
     }
 }
@@ -133,6 +139,9 @@ a{
         width: calc(100% - 2rem);
     }
     #newsletter-about{
+        width: calc(100% - 2rem);
+    }
+    #our-hostes{
         width: calc(100% - 2rem);
     }
 }

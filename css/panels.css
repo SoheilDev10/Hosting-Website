@@ -17,12 +17,15 @@
 #buying-host .right-buying .btn2{
     background-color: var(--primary-buttons-color);
 }
-.tabs button .active-tab:hover{
-    color: white !important;
-}
-.tabs button:hover{
+.tabs button:not(.active-tab):hover{
     color: #e50418;
 }
 .tabs .active-tab{
     background-color: var(--primary-buttons-color);
+    color: white;
+}
+#our-hostes{
+    background-image: url("/assets/plans-pattern.png");
+    background-color: #e50418;
+    width: calc(100% - 10rem);
 }
