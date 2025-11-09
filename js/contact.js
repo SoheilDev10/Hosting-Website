@@ -1,3 +1,6 @@
+const rightBtn = document.querySelector(".right-about .btn-r");
+const lefttBtn = document.querySelector(".right-about .btn-l");
+
 function main() {
     accordion();
 }
@@ -30,5 +33,11 @@ const accordion = () => {
             }
         });
     })
+    rightBtn.addEventListener('click', () => {
+        window.location.href = "/html/about.html";
+    });
+    lefttBtn.addEventListener('click', () => {
+        window.location.href = "/html/panels.html";
+    });
 }
 document.addEventListener('DOMContentLoaded', main);

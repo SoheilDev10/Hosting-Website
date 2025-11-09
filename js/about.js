@@ -1,6 +1,17 @@
 const holderHostes = document.querySelector("#hostes-about .holder-hostes");
+const topBtn = document.querySelector("#top-about button");
+const knowBtn = document.querySelectorAll(".right-know button");
 
 function main() {
+    topBtn.addEventListener('click', () => {
+        window.location.href = "/html/panels.html";
+    });
+    knowBtn.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const isLast = index === knowBtn.length - 1;
+            window.location.href = isLast ? "/html/panels.html" : "/html/contact.html";
+        });
+    })
     addServises();
 }
 

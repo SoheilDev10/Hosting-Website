@@ -168,6 +168,13 @@ function main() {
     addServises(linuxHostes);
     const allTabs = [linuxTab, wpTab, cloudTab, windowsTab];
     const allServises = [linuxHostes, wpHostes, cloudHostes, windowsHostes];
+    const allEl = [...document.querySelectorAll(".host-servise")];
+    allEl.forEach(el => {
+        el.classList.remove("opacity-0");
+        el.classList.add("opacity-100");
+        el.classList.remove("translate-y-10");
+        el.classList.add("translate-y-0");
+    })
     allTabs.forEach((all, index) => {
         all.addEventListener('click', () => {
             if (!all.classList.contains("active-tab")) {
@@ -178,6 +185,15 @@ function main() {
                 if (isEmpty == true) {
                     const theServis = allServises[index];
                     addServises(theServis);
+                    setTimeout(() => {
+                        const allEl = [...document.querySelectorAll(".host-servise")];
+                        allEl.forEach(el => {
+                            el.classList.remove("opacity-0");
+                            el.classList.add("opacity-100")
+                            el.classList.remove("translate-y-10");
+                            el.classList.add("translate-y-0");
+                        })
+                    }, 200);
                     isEmpty = false;
                 }
             }
@@ -193,7 +209,7 @@ function main() {
 const addServises = (servis) => {
     servis.forEach(item => {
         const host = document.createElement("div");
-        host.classList.add("host-servise", "flex", "gap-y-5", "bg-white", "rounded-2xl", "p-4", "pt-10", "flex-col", "cursor-pointer", "lg:w-3/12", "w-10/12", "items-center");
+        host.classList.add("host-servise", "flex", "gap-y-5", "bg-white", "rounded-2xl", "p-4", "pt-10", "flex-col", "cursor-pointer", "lg:w-3/12", "w-10/12", "items-center", "opacity-0");
         const h5 = document.createElement("h5");
         h5.className = "text-xl font-bold text-black p-3 rounded-sm name-host text-center";
         h5.textContent = item.name;
@@ -222,7 +238,7 @@ const addServises = (servis) => {
     })
     const allHosts = [...document.querySelectorAll(".host-servise")];
     allHosts.forEach(all => {
-        all.classList.add("transition-all", "duration-500", "hover:-translate-y-3");
+        all.classList.add("transition-all", "duration-500", "hover:-translate-y-3", "translate-y-10");
     })
 }
 document.addEventListener('DOMContentLoaded', main);

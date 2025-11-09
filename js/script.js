@@ -25,7 +25,7 @@ function Main() {
     loadCarousel()
     addServises();
     handdleScrollY();
-    //accordion();
+    linksBtn();
 }
 const hosting = [{
     name: "هاست وردپرس پایه",
@@ -136,6 +136,7 @@ const handdleScrollY = () => {
         });
     });
 }
+//Create accordion
 const accordion = () => {
     const question = document.querySelectorAll(".accordion");
     question.forEach(item => {
@@ -156,5 +157,30 @@ const accordion = () => {
         });
     })
 
+}
+const linksBtn = () => {
+    const btnHero1 = document.querySelector(".btn-hero1");
+    const btnHero2 = document.querySelector(".btn-hero2");
+    btnHero1.addEventListener('click', () => {
+        window.location.href = "/html/about.html";
+    });
+    btnHero2.addEventListener('click', () => {
+        window.location.href = "/html/panels.html";
+    });
+    const leftProps = [...document.querySelectorAll(".left-props button")];
+    leftProps.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            window.location.href = "/html/contact.html";
+            if (index + 1 == leftProps.length)
+                window.location.href = "/html/panels.html";
+        });
+    })
+    const aboutRight = [...document.querySelectorAll(".about-right button")];
+    aboutRight.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const isLast = index === aboutRight.length - 1;
+            window.location.href = !isLast ? "/html/contact.html" : "/html/panels.html";
+        });
+    })
 }
 document.addEventListener('DOMContentLoaded', Main);

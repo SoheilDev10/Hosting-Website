@@ -10,6 +10,7 @@
      const btnCloseModalSr = document.querySelector(".btn-close-modal-search");
      const menuItems = document.querySelectorAll(".menu-link");
      const body = document.querySelector("body");
+     const btnContact = document.querySelector(".btn-contact");
 
      btnMenu.addEventListener('click', () => {
          offCanvas.classList.add("flex");
@@ -73,5 +74,8 @@
              item.classList.add("active");
          });
      })
+     btnContact.addEventListener('click', () => {
+         window.location.href = "/html/contact.html";
+     });
  }
  Header()
