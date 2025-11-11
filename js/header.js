@@ -11,6 +11,8 @@
      const menuItems = document.querySelectorAll(".menu-link");
      const body = document.querySelector("body");
      const btnContact = document.querySelector(".btn-contact");
+     const btnPanel = document.querySelector(".btn-panel");
+     const btnLoginMobile = document.querySelector(".btn-login-mobile");
 
      btnMenu.addEventListener('click', () => {
          offCanvas.classList.add("flex");
@@ -76,6 +78,12 @@
      })
      btnContact.addEventListener('click', () => {
          window.location.href = "/html/contact.html";
+     });
+     btnPanel.addEventListener('click', () => {
+         window.location.href = "/html/login.html";
+     });
+     btnLoginMobile.addEventListener('click', () => {
+         window.location.href = "/html/login.html";
      });
  }
  Header()
